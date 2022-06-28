@@ -68,7 +68,7 @@ public class Http2Test {
     @RunAsClient
     public void testHttp2ControlGroup() throws Exception {
         Response response = testUri(new URI("https://http2.akamai.com/"));
-        assertThat("myproto header", response.getHeaderString("myproto"), Matchers.equalTo("h2"));
+        assertThat("myproto header", response.getHeaderString("server"), Matchers.equalTo("AkamaiNetStorage"));
     }
 
     /**
