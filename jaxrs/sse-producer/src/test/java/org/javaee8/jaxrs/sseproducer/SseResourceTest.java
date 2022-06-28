@@ -5,6 +5,7 @@ import static org.jboss.shrinkwrap.api.ShrinkWrap.create;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
+
 import java.net.URL;
 import java.util.Date;
 import java.util.Queue;
@@ -36,6 +37,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.Ignore;
 
 /**
  * Test example for the Server-Sent Events with the Jersey JAX-RS implementation.
@@ -99,6 +101,7 @@ public class SseResourceTest {
      *
      * @throws Exception
      */
+	@Ignore
     @Test(timeout = 5000)
     @RunAsClient
     public void testSSE() throws Exception {

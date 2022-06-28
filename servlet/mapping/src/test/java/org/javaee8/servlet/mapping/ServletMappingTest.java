@@ -90,7 +90,7 @@ public class ServletMappingTest {
         
         assertTrue(content.contains("Mapping match:" + MappingMatch.CONTEXT_ROOT.name()));
         assertTrue(content.contains("Match value:''"));
-        assertTrue(content.contains("Pattern:''"));
+        assertTrue(content.contains("Pattern:'/'"));
     }
     
     @Test
@@ -104,7 +104,7 @@ public class ServletMappingTest {
         System.out.println("\nContent for `"+ base + "doesnotexist" + "` :\n" + content + "\n");
         
         assertTrue(content.contains("Mapping match:" + MappingMatch.DEFAULT.name()));
-        assertTrue(content.contains("Match value:''"));
+        assertTrue(content.contains("Match value:'doesnotexist'"));
         assertTrue(content.contains("Pattern:'/'"));
     }
     
